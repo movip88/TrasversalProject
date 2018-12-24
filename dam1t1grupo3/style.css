@@ -1,0 +1,410 @@
+/*css header sin loggeearte*/
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/fondo.png);
+    overflow-y: hidden;
+}
+div{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    background-color: #556C5B;
+    display: inline-block;
+}
+header>img{
+    position: relative;
+    width: 45%;
+    vertical-align: top;
+}
+
+#cabecera{
+    display: inline-block;
+    width: 45%;
+    height: 200px;
+    top: 15%;
+    font-family: calibri;
+    font-size: 1.3em;
+}
+
+.botenos_inicio{
+    border: 2px solid #EFE0BE;
+    height: 15%;
+    background-color: #EEE0A0;
+    font-weight: bold;
+}
+
+.botenos_inicio:hover {
+    background-color: #424242;
+    border-color: white;
+    color: White;
+    cursor: pointer;
+}
+/*header leggeado*/
+#text{
+    font-size: 0.8em;
+    width: 50%;
+}
+
+#foto{
+    position: relative;
+    width: 30%;
+    height: 80%;
+}
+#imagen_usuario{
+    position: relative;
+    width: 100px;
+}
+
+#datos_usuario{
+    position: relative;
+    display: inline-block;
+    width: 114%;
+    top: -5%;
+}
+
+#cerrar_session{
+    position: relative;
+    width: 15%;
+    background: #424242;
+    color: #F2F2F2;
+    margin-top: 7%;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+}
+
+#cerrar_session:hover {
+    background: rgba(0,0,0,0);
+    color: black;
+    box-shadow: inset 0 0 0 3px black;
+}
+
+/*cuerpo de la pagina*/
+#cuerpo{
+    height: 100%;
+    width: 100%;
+    top: 130px;
+}
+
+#contenido_pagina{
+    height: 80%;
+    width: 78%;
+    left: 22%;
+    position: fixed;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+/*anuncios*/
+
+#publi{
+    height: 100%;
+    width: 20%;
+    position: fixed;
+}
+
+#publicaidad1,#publicaidad2{
+    margin-top: 7%;
+    width: 100%;
+    height: 35%;
+}
+#publi img{
+    margin-right: 15%;
+    width: 100%;
+    height: 200px;
+}
+/*listados*/
+#listados{
+    text-align: center;
+    width: 90%;
+}
+table th {
+    width: 15%;
+    text-align: center;
+    color: #556C5B;
+}
+
+table td {
+    width: 15%;
+    text-align: center;
+}
+
+table{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    opacity: 0.9;
+    background-color: #E6E6E6;
+    border: 1px solid #298A08;
+    border-radius: 5px;
+}
+
+.botones_listados{
+    border: none;
+    background: #424242;
+    color: #F2F2F2;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+}
+/*menu opciones usuario*/
+#opcines{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+#opcines{
+    text-align: center;
+    position: relative;
+    border-style: groove;
+    border-color: #1C1C1C;
+    border-radius: 109px 109px 109px 109px;
+    width: 20%;
+    height: auto;
+    left: 35%;
+    font-family: Calibri;
+    background-color: white;
+}
+
+#opcines:hover ~ #menus{
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+}
+
+#menus{
+    position: absolute;
+    z-index: 20;
+    text-align: center;
+    display: none;
+    width: 20%;
+    left: 35%;
+    border-style: groove;
+    border-color: #1C1C1C;
+    border-radius: 0px 0px 50px 50px;
+    border-top: none;
+    font-family: Calibri;
+    background-color: white;
+}
+
+#menus:hover{
+    display: inline-block;
+}
+
+.opcion:hover{
+    background-color: #585858;
+    color: white;
+}
+.opcion{
+    margin: 10px;
+    border-radius: 109px 109px 109px 109px;
+}
+
+#contenido_datos{
+    width: 100%;
+    height: 100%;
+}
+/*css para modificar datos de perfil*/
+#contenido_datos_2 {
+    text-align: center;
+    width: auto;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    left: 30%;
+    top: -25%;
+    font-family: Calibri;
+    font-weight: bold;
+    color: #455E59;
+}
+
+#contenido_datos_2 button {
+    border: none;
+    background: #424242;
+    color: #F2F2F2;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+}
+
+#contenido_datos_2 button:hover {
+    background: rgba(0,0,0,0);
+    color: black;
+    box-shadow: inset 0 0 0 3px black;
+}
+
+#contenido_datos label {
+    font-family: Calibri;
+    font-size: 1.1em;
+
+}
+
+#contenido_datos img {
+    width: 150px;
+    height: 150px;
+}
+
+#input_modificar {
+    border: 1px solid black;
+    border-radius: 7%;
+}
+
+/*css para la parte de crear un concierto*/
+
+#ver_modificar {
+    font-weight: bold;
+}
+
+
+/*corazon voto*/
+#heart-shape{
+    width: 20px;
+    height: 20px;
+}
+
+#heart-shape img{
+    height: 100%;
+    width: 100%;
+}
+
+#enviar_concierto {
+    border: none;
+    background: #424242;
+    color: #F2F2F2;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    margin-top: 2%;
+}
+
+#enviar_concierto:hover {
+    background: rgba(0,0,0,0);
+    color: black;
+    box-shadow: inset 0 0 0 3px black;
+}
+
+#form_conciertos input {
+    border-radius: 7%;
+    border: 1px solid black;
+}
+
+#form_conciertos select {
+    border-radius: 7%;
+    border: 1px solid black;
+}
+
+.boton_local {
+    border: none;
+    background: #424242;
+    color: #F2F2F2;
+    border-radius: 1px;
+}
+
+.ocultar a {
+    color: black;
+}
+
+#mapa2{
+    width: 480px;
+    height: 400px;
+}
+
+/*media queries*/
+@media screen and (max-width: 1173px) {
+    #publi {
+        display: none;
+    }
+
+    #cabecera {
+        text-align: center;
+        width: 100%;
+    }
+
+    header>img {
+        display: none;
+    }
+    #imagen_usuario {
+        width: 100px;
+    }
+
+    #contenido_pagina{
+        width: 95%;
+        left: 5%;
+    }
+
+    #text {
+        left: -10%;
+    }
+
+    #foto {
+        left: -25%;
+    }
+
+    #cerrar_session {
+        left: -28%;
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #contenido_datos {
+        text-align: center;
+    }
+
+    #imagen_usuario {
+        display: none;
+    }
+
+    #datos_usuario {
+        text-align: center;
+    }
+
+    #text {
+        left: 10%;
+    }
+
+    #cerrar_session {
+        left: -18%;
+        width: 17%;
+    }
+
+    .ocultar{
+        display: none;
+    }
+
+    #opcines,#menus{
+        left: 20%;
+        width: 60%;
+    }
+
+    #contenido_datos_2{
+        display: block;
+        top: 5%;
+        left: 0%;
+    }
+
+    #mapa2{
+        width: 245px;
+        height: 258px;
+    }
+}
